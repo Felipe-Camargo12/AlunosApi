@@ -56,6 +56,7 @@ namespace AlunosApi
             services.AddScoped<IAlunoService, AlunosService>();
 
             services.AddControllers();
+            // Configurações do Swagger aqui!
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AlunosApi", Version = "v1" });
